@@ -1,3 +1,5 @@
+### FOLDER STRUCTURE
+```
 src/
 └── com.aurionpro/
     ├── model/
@@ -31,3 +33,4 @@ src/
     │   └── ValidatorUtil.java
     └── test/
         └── MiniProjectApp.java
+```
