@@ -1,19 +1,30 @@
 package com.aurionpro.model.entities;
 
 public class Teacher {
-	 private int teacherId;
+	 	private int teacherId;
 	    private String name;
 	    private int profileId;
+	    private boolean isActive;
+	    public Teacher() {
+	    	
+	    }
 
-	    public Teacher() {}
-
-	    public Teacher(int teacherId, String name, int profileId) {
+	    public Teacher(int teacherId, String name, int profileId,boolean isActive) {
 	        this.teacherId = teacherId;
 	        this.name = name;
 	        this.profileId = profileId;
+	        this.isActive = isActive;
 	    }
 
-	    public int getTeacherId() {
+	    public boolean isActive() {
+			return isActive;
+		}
+
+		public void setActive(boolean isActive) {
+			this.isActive = isActive;
+		}
+
+		public int getTeacherId() {
 	        return teacherId;
 	    }
 

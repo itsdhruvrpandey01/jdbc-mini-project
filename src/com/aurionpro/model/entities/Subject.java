@@ -1,12 +1,16 @@
 package com.aurionpro.model.entities;
 
 public class Subject {
-	  private int subjectId;
+	  	private int subjectId;
 	    private String name;
 	    private int courseId;   
-	    private int teacherId;  
+	    private int teacherId;
+	    private boolean isActive;
+	    
 
-	    public Subject() {}
+	    public Subject() {
+	    	
+	    }
 
 	    public Subject(int subjectId, String name, int courseId, int teacherId) {
 	        this.subjectId = subjectId;
@@ -14,6 +18,15 @@ public class Subject {
 	        this.courseId = courseId;
 	        this.teacherId = teacherId;
 	    }
+	    
+	    public boolean isActive() {
+			return isActive;
+		}
+
+		public void setActive(boolean isActive) {
+			this.isActive = isActive;
+		}
+
 
 	    public int getSubjectId() {
 	        return subjectId;

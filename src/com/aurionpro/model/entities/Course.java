@@ -1,8 +1,9 @@
 package com.aurionpro.model.entities;
 
 public class Course {
-	   private int courseId;
+	   	private int courseId;
 	    private String name;
+	    private boolean isActive;
 
 	    public Course() {}
 
@@ -10,6 +11,14 @@ public class Course {
 	        this.courseId = courseId;
 	        this.name = name;
 	    }
+	    public boolean isActive() {
+			return isActive;
+		}
+
+		public void setActive(boolean isActive) {
+			this.isActive = isActive;
+		}
+
 
 	    public int getCourseId() {
 	        return courseId;

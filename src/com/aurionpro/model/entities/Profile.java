@@ -1,12 +1,14 @@
 package com.aurionpro.model.entities;
 
 public class Profile {
-	  private int profileId;
+	    private int profileId;
 	    private String email;
 	    private String phone;
 	    private String city;
-
-	    public Profile() {}
+	    private boolean isActive;
+	    public Profile() {
+	    	
+	    }
 
 	    public Profile(int profileId, String email, String phone, String city) {
 	        this.profileId = profileId;
@@ -14,6 +16,15 @@ public class Profile {
 	        this.phone = phone;
 	        this.city = city;
 	    }
+	    
+	    public boolean isActive() {
+			return isActive;
+		}
+
+		public void setActive(boolean isActive) {
+			this.isActive = isActive;
+		}
+
 
 	    public int getProfileId() {
 	        return profileId;

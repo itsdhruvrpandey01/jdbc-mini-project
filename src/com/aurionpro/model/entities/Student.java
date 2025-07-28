@@ -1,14 +1,22 @@
 package com.aurionpro.model.entities;
 
 public class Student {
-	 private int studentId;
+	    private int studentId;
 	    private String name;
 	    private int profileId;
+	    private boolean isActive;
 		public Student(int studentId, String name, int profileId) {
 			super();
 			this.studentId = studentId;
 			this.name = name;
 			this.profileId = profileId;
+		}
+		public boolean isActive() {
+			return isActive;
+		}
+
+		public void setActive(boolean isActive) {
+			this.isActive = isActive;
 		}
 		public int getStudentId() {
 			return studentId;
