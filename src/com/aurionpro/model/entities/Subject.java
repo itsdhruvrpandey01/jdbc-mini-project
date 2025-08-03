@@ -4,19 +4,17 @@ public class Subject {
 	  	private int subjectId;
 	    private String name;
 	    private int courseId;   
-	    private int teacherId;
 	    private boolean isActive;
-	    
+	    private String courseName;	
 
 	    public Subject() {
 	    	
 	    }
 
-	    public Subject(int subjectId, String name, int courseId, int teacherId) {
+	    public Subject(int subjectId, String name, int courseId) {
 	        this.subjectId = subjectId;
 	        this.name = name;
 	        this.courseId = courseId;
-	        this.teacherId = teacherId;
 	    }
 	    
 	    public boolean isActive() {
@@ -52,17 +50,16 @@ public class Subject {
 	        this.courseId = courseId;
 	    }
 
-	    public int getTeacherId() {
-	        return teacherId;
+	    public String getCourseName() {
+	        return courseName;
 	    }
 
-	    public void setTeacherId(int teacherId) {
-	        this.teacherId = teacherId;
+	    public void setCourseName(String courseName) {
+	        this.courseName = courseName;
 	    }
-
 	    @Override
 	    public String toString() {
 	        return "Subject [subjectId=" + subjectId + ", name=" + name +
-	               ", courseId=" + courseId + ", teacherId=" + teacherId + "]";
+	               ", courseId=" + courseId + "]";
 	    }
 }

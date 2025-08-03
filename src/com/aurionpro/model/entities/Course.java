@@ -3,13 +3,17 @@ package com.aurionpro.model.entities;
 public class Course {
 	   	private int courseId;
 	    private String name;
+	    private int durationInMonths;
+
 	    private boolean isActive;
 
 	    public Course() {}
 
-	    public Course(int courseId, String name) {
+	    public Course(int courseId, String name,int durationInMonths) {
 	        this.courseId = courseId;
 	        this.name = name;
+	        this.durationInMonths = durationInMonths;
+	        this.isActive = true;
 	    }
 	    public boolean isActive() {
 			return isActive;
@@ -35,9 +39,17 @@ public class Course {
 	    public void setName(String name) {
 	        this.name = name;
 	    }
+	    public int getDurationInMonths() {
+	        return durationInMonths;
+	    }
 
+	    public void setDurationInMonths(int durationInMonths) {
+	        this.durationInMonths = durationInMonths;
+	    }
 	    @Override
 	    public String toString() {
-	        return "Course [courseId=" + courseId + ", name=" + name + "]";
+	    	 return "Course [courseId=" + courseId + 
+	    	           ", name=" + name + 
+	    	           ", durationInMonths=" + durationInMonths + "]";
 	    }
 }
